@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    position: relative;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -13,7 +12,7 @@
 body {
     background: #000;
     font-family: sans-serif;
-   color: #fff;
+    color: #fff;
 }
 canvas{
     position: absolute;
@@ -23,25 +22,28 @@ canvas{
     bottom: 0;
     height: 100%;
     width: 100%;
+    z-index: -1;
 }
 #container{
     width: 70%;
+    min-height: 100vh;
     margin: auto;
-    max-width: 800px;
-    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #logo{
-    width: 300px;
-    margin: auto;
-    padding: 0;
     cursor: pointer;
 }
-#wrapper{
-    padding: 2% 0;
-    text-align: center;
+#logo svg{
+    width: 400px;
+    height: 400px;
 }
-#search-form{
-    z-index: 1000;
+#wrapper{
+    margin: 5% 0;
+    text-align: center;
+    width: 100%;
 }
 #search-this{
       height: 45px;
@@ -71,25 +73,32 @@ canvas{
 #search-btn:hover{
     background: #698C34;
 }
-footer div{
-    float: left;
-    width: 33.3333333333%;
-    text-align: center;
-    padding: 5% 0;
+footer{
+    width: 70%;
 }
-footer svg{
+footer > div{
+    margin: 5% auto auto auto;
+}
+footer span{
+    padding: 0 10px;
+}
+#links, #social{
+    display: flex;
+    justify-content: space-around;
+}
+#links svg{
     width: 32px;
     height: 32px;
     margin: -10px 0;
 }
 #social{
-  width:100%;
+    width: 50%;
 }
-#social svg {
-  margin : 0 10px;
-  width: 20px;
-  height: 20px;
+#social svg{
+    width: 28px;
+    height: 28px;
 }
+
 #social svg:hover path{
   fill: #79A33B;
 }
@@ -103,14 +112,20 @@ a:hover{
 svg path{
     fill: #A3A3A3;
 }
-#logo:hover path{
+#logo:hover path, footer a:hover footer svg path{
     fill: #79A33B;
 }
-svg,a,iframe{
-    z-index: 10;
+@media only screen and (max-width : 800px){
+    #search-this {
+        width: 75%;
+    }
+    #logo svg{
+        width: 300px;
+        height: 300px;
+    }
 }
-@media only screen and (max-width : 500px){
-    footer div{
-        width: 100%;
+@media only screen and (max-width : 610px){
+    #links svg{
+        margin: 0;
     }
 }
