@@ -1,2 +1,2 @@
 # X Distro Start Page
-(Implemented Here)(http://start.xdistro.xyz)
+[Implemented Here](http://start.xdistro.xyz)
