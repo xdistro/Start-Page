@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.clear{
+    clear: both;
+}
+body {
+    background: #000;
+    font-family: sans-serif;
+   color: #fff;
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+#container{
+    width: 70%;
+    margin: auto;
+    max-width: 800px;
+    margin-top: 5%;
+}
+#logo{
+    width: 300px;
+    margin: auto;
+    padding: 0;
+    cursor: pointer;
+}
+#wrapper{
+    padding: 2% 0;
+    text-align: center;
+}
+#search-form{
+    z-index: 1000;
+}
+#search-this{
+      height: 45px;
+      width: 50%;
+      font-size: 100%;
+      color: #444;
+      padding: 0;
+      padding-left: 10px!important;
+      margin: 0;
+      border: 0 none;
+}
+#search-btn{
+      height: 45px;
+      width: 50px;
+      padding: 0px 0px 5px;
+      margin: 0;
+      border: 0 none;
+      padding-top: 2px;
+      background: #79A33B;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      -webkit-transition: background 200ms linear;
+      -moz-transition: background 200ms linear;
+      transition: background 200ms linear;
+}
+#search-btn:hover{
+    background: #698C34;
+}
+footer div{
+    float: left;
+    width: 33.3333333333%;
+    text-align: center;
+    padding: 5% 0;
+}
+footer svg{
+    width: 32px;
+    height: 32px;
+    margin: -10px 0;
+}
+#social{
+  width:100%;
+}
+#social svg {
+  margin : 0 10px;
+  width: 20px;
+  height: 20px;
+}
+#social svg:hover path{
+  fill: #79A33B;
+}
+a{
+    color: #A3A3A3;
+    text-decoration: none;
+}
+a:hover{
+    color: #79A33B;
+}
+svg path{
+    fill: #A3A3A3;
+}
+#logo:hover path{
+    fill: #79A33B;
+}
+svg,a,iframe{
+    z-index: 10;
+}
+@media only screen and (max-width : 500px){
+    footer div{
+        width: 100%;
+    }
+}
