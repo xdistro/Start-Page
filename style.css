@@ -18,7 +18,10 @@ canvas{
     bottom: 0;
     height: 100%;
     width: 100%;
-    z-index: -1;
+}
+a, svg path, input, button{
+   position: relative;
+   z-index: 100000;
 }
 a, svg path, #search-btn{
     -webkit-transition: all 0.2s ease-in-out;
@@ -50,8 +53,8 @@ a, svg path, #search-btn{
     cursor: pointer;
 }
 #logo svg{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin-top: 10px;
 }
 #wrapper{
@@ -137,8 +140,8 @@ svg path{
         width: 75%;
     }
     #logo svg{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 }
 @media only screen and (max-width : 610px){
