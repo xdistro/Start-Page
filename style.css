@@ -24,12 +24,13 @@ a, svg path, input, button{
    z-index: 100000;
 }
 a, svg path, #search-btn{
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 #container{
     width: 70%;
     min-height: 100vh;
+    max-width: 1400px;
     margin: auto;
     display: -webkit-box;
     display: -webkit-flex;
@@ -88,23 +89,24 @@ a, svg path, #search-btn{
     background: #4D9E30;
 }
 footer{
-    width: 70%;
+    width: 100%;
     margin-bottom: 10px;
 }
-footer > div{
-    margin: 5% auto auto auto;
-}
 footer span{
-    padding: 0 10px;
+    text-align: center;
 }
 #links, #social{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    text-align: center;
+}
+#links{
+   margin-top: 10px;
+}
+#links span{
+   margin-right: 15%;
+   display: inline-block;
+}
+#links span:last-child{
+   margin-right: 0;
 }
 #links svg{
     width: 32px;
@@ -112,13 +114,18 @@ footer span{
     margin: -10px 0;
 }
 #social{
-    width: 50%;
+   margin-top: 50px;
+}
+#social span{
+   margin-right: 10px;
+}
+#social span:last-child{
+   margin-right: 0;
 }
 #social svg{
     width: 28px;
     height: 28px;
 }
-
 #social svg:hover path{
   fill: #65BC46;
 }
@@ -145,7 +152,11 @@ svg path{
     }
 }
 @media only screen and (max-width : 610px){
-    #links svg{
-        margin: 0;
-    }
+    #container{
+      width: 85%;
+   }
+   #links span{
+      margin-top: 10px;
+      margin-right: 20px;
+   }
 }
