@@ -1,4 +1,4 @@
-# X Distro Start Page [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/xdistro/xdistro)
+# X Distro Start Page 
 
 ![Start Page](http://xdistro.xyz/wp-content/uploads/2015/08/Start-Page.png)
 
